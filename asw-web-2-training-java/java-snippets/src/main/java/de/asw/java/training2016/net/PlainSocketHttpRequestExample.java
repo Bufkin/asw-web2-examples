@@ -14,7 +14,7 @@ public class PlainSocketHttpRequestExample {
 			new PrintStream(socket.getOutputStream()) //
 					.printf("GET /index.html HTTP/1.1%n") // HTTP Request Line
 					.printf("Host: www.example.com%n") // HTTP Host Header to
-														// select domain
+					// select domain
 					.println(); // empty line
 
 			// Read HTTP Response (Status-Line + Header + Body)

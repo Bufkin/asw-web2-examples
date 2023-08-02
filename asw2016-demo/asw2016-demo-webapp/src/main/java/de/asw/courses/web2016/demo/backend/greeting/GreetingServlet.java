@@ -18,7 +18,7 @@ public class GreetingServlet extends HttpServlet {
 	 * <pre>
 	 * {@code curl http://localhost:8080/asw2016-demo-webapp/greetingServlet\?name=Test }
 	 * </pre>
-	 * 
+	 *
 	 * @see javax.servlet.http.HttpServlet#doGet(javax.servlet.http.HttpServletRequest,
 	 *      javax.servlet.http.HttpServletResponse)
 	 */

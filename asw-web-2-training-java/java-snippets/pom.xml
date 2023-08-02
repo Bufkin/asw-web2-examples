@@ -14,13 +14,14 @@
   <dependency>
    <groupId>com.squareup.okhttp3</groupId>
    <artifactId>okhttp</artifactId>
-   <version>3.4.2</version>
+   <version>5.0.0-alpha.11</version>
   </dependency>
 
   <dependency>
    <groupId>org.assertj</groupId>
    <artifactId>assertj-core</artifactId>
    <scope>test</scope>
+   <version>3.23.2</version>
   </dependency>
 
   <dependency>
@@ -28,15 +29,15 @@
    <artifactId>junit</artifactId>
    <scope>test</scope>
   </dependency>
+  <version>5.9.2</version>
  </dependencies>
 
  <build>
-
   <plugins>
    <plugin>
     <groupId>org.codehaus.mojo</groupId>
     <artifactId>build-helper-maven-plugin</artifactId>
-    <version>1.12</version>
+    <version>3.3.0</version>
     <executions>
      <execution>
       <id>add-source</id>
@@ -54,6 +55,4 @@
    </plugin>
   </plugins>
  </build>
-
-
 </project>
