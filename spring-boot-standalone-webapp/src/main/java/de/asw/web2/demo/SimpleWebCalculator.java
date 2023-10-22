@@ -17,9 +17,9 @@ class SimpleWebCalculator {
 
 	/**
 	 * List's available operations.
-	 * 
+	 *
 	 * {@code curl http://localhost:8080/calc/ops }
-	 * 
+	 *
 	 * @param formData
 	 * @return
 	 */
@@ -30,9 +30,9 @@ class SimpleWebCalculator {
 
 	/**
 	 * Computes the result for the given operations and operands.
-	 * 
+	 *
 	 * {@code curl -d "x=2&y=10&op=pow" http://localhost:8080/calc }
-	 * 
+	 *
 	 * @see #listSupportedOperations() for the list of supported op-codes.
 	 * @param formData
 	 * @return

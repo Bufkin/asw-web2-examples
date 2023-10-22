@@ -12,5 +12,4 @@ public class SpringBootStandaloneWebappApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
-
 }
