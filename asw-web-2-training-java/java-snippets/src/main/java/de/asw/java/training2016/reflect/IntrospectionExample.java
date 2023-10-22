@@ -8,7 +8,6 @@ import java.lang.reflect.Method;
 import javax.xml.bind.annotation.XmlRootElement;
 
 public class IntrospectionExample {
-
 	@XmlRootElement
 	public static class Obj {
 
@@ -22,12 +21,11 @@ public class IntrospectionExample {
 	}
 
 	public static void main(String[] args) throws Exception {
-
 		Obj o = new Obj();
 
 		System.out.println("# Liefert Information über die â€œStrukturâ€� eines Objektes:");
 		ObjectInspector.inspect(o);
-		
+
 		System.out.println("\n# Dynamische Methodenaufrufe durchfÃ¼hren:");
 //		o.someMethod();/expliziter aufruf
 		System.out.println(o.getClass().getMethod("someMethod").invoke(o)); //aufruf über reflection
@@ -44,14 +42,13 @@ public class IntrospectionExample {
 	}
 
 	static class ObjectInspector {
-
 		public static void inspect(Object o) throws Exception {
 
 			log("## Inspecting object instance: %s%n", o);
 			Class<?> clazz = o.getClass();
 
 			log("%n## Inspecting class: %s%n", clazz);
-			
+
 			log("%n## Annotations:%n");
 			for (Annotation anno : clazz.getDeclaredAnnotations()) {
 				log("### declared annotation: %s%n", anno);
@@ -82,6 +79,5 @@ public class IntrospectionExample {
 		private static void log(String msg, Object... args) {
 			System.out.printf(msg, args);
 		}
-
 	}
 }

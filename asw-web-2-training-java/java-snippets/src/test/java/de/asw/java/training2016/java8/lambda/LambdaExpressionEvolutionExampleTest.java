@@ -9,7 +9,6 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class LambdaExpressionEvolutionExampleTest {
-
 	List<Shape> shapes;
 
 	@Before
@@ -19,7 +18,6 @@ public class LambdaExpressionEvolutionExampleTest {
 
 	@Test
 	public void iterateAndChangeColorUpToJava14() {
-
 		LambdaExpressionEvolutionExample.iterateAndChangeColorUpToJava14(shapes, Color.ORANGE);
 
 		assertThat(shapes).allMatch(s -> s.getColor() == Color.ORANGE);
@@ -27,7 +25,6 @@ public class LambdaExpressionEvolutionExampleTest {
 
 	@Test
 	public void iterateAndChangeColorWithJava5() {
-
 		LambdaExpressionEvolutionExample.iterateAndChangeColorUpToJava14(shapes, Color.YELLOW);
 
 		assertThat(shapes).allMatch(s -> s.getColor() == Color.YELLOW);
@@ -35,10 +32,8 @@ public class LambdaExpressionEvolutionExampleTest {
 
 	@Test
 	public void iterateAndChangeColorWithJava8() {
-
 		LambdaExpressionEvolutionExample.iterateAndChangeColorUpToJava14(shapes, Color.WHITE);
 
 		assertThat(shapes).allMatch(s -> s.getColor() == Color.WHITE);
 	}
-
 }

@@ -7,7 +7,6 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class UrlHttpRequestExample {
-
 	public static void main(String[] args) throws Exception {
 
 		URLConnection urlConnection = new URL("https://www.example.org").openConnection();

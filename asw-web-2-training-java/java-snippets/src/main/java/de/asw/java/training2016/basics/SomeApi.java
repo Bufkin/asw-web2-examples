@@ -21,8 +21,8 @@ class ApiUser {
 
 	public static void main(String[] args) {
 
-		SomeApi api = //
-				new SomeImpl() //
+		SomeApi api =
+				new SomeImpl()
 		// new AnotherImpl()
 		;
 		api.someOperation1();

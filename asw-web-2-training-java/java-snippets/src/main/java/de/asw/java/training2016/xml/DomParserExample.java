@@ -10,7 +10,6 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class DomParserExample {
-
 	public static void main(String[] args) throws Exception {
 
 		InputStream is = SaxParserExample.class.getClassLoader() //

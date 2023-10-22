@@ -1,10 +1,9 @@
 package de.asw.java.training2016.basics;
 
 public class Person {
-	
+
 	//field firstname
-	String firstname; 
-	
+	String firstname;
 	String lastname;
 
 	//Bean property Firstname (accessor / getter)
@@ -27,6 +26,4 @@ public class Person {
 
 //	public Person() { //implizit immer da (wenn kein anderer Konstruktor da ist
 //	}
-	
-	
 }

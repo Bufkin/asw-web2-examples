@@ -9,9 +9,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class UrlConnectionHttpPostRequestExample {
-
 	public static void main(String[] args) throws Exception {
-
 		HttpURLConnection urlConnection = (HttpURLConnection) new URL("https://httpbin.org/post").openConnection();
 		urlConnection.setRequestProperty("Content-Type", "application/json");
 		urlConnection.setDoOutput(true);

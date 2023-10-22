@@ -10,7 +10,6 @@ import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
 public class SaxParserExample {
-
 	public static void main(String[] args) throws Exception {
 
 		InputStream is = SaxParserExample.class.getClassLoader() //

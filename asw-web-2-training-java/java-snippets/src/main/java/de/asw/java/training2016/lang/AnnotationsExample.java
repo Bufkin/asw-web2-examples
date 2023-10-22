@@ -68,5 +68,5 @@ class Typ {
 @interface AnAnnotation {
 }
 
-@interface AnAll {	
+@interface AnAll {
 }

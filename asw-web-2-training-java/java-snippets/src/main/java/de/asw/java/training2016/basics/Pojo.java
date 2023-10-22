@@ -21,5 +21,4 @@ public class Pojo {
 	public void setIntValue(int intValue) {
 		this.intValue = intValue;
 	}
-
 }

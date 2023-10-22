@@ -8,7 +8,6 @@ import java.util.List;
  * Created by tom on 05.10.16.
  */
 public class LambdaExpressionEvolutionExample {
-
     public static void main(String[] args) {
 
         List<Shape> shapes = Arrays.asList(new Shape(Color.RED), new Shape(Color.GREEN), new Shape(Color.BLUE));

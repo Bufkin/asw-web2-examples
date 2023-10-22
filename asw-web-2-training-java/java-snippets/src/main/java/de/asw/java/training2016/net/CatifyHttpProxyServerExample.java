@@ -17,10 +17,10 @@ import java.util.regex.Pattern;
  * <p>
  * Just run this program and configure your browser (e.g. firefox) to use
  * 127.0.0.1:9999 as a proxy server.
- * 
+ *
  * Then browse to a site like http://www.spiegel.de/
  * </p>
- * 
+ *
  */
 public class CatifyHttpProxyServerExample {
 

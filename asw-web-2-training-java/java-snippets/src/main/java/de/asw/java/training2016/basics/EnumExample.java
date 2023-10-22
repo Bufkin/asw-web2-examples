@@ -18,8 +18,8 @@ public class EnumExample {
 		case GELB:
 			System.out.println("gelb");
 			break;
-		case GRÜN:
-			System.out.println("grün");
+		case GRÃœN:
+			System.out.println("grï¿½n");
 			break;
 		}
 	}
@@ -34,19 +34,19 @@ public class EnumExample {
 		case GELB:
 			System.out.println(foo.getName());
 			break;
-		case GRÜN:
+		case GRÃœN:
 			System.out.println(foo.getName());
 			break;
 		}
-		
+
 		System.out.println(foo.getFarbCode());
 	}
-	
+
 	enum Farbe {
-		ROT("FF0000"), GELB("00FFFF"), GRÜN("00FF00");
-		
+		ROT("FF0000"), GELB("00FFFF"), GRÃœN("00FF00");
+
 		private final String farbcode;
-		
+
 		private Farbe(String farbcode) {
 			this.farbcode = farbcode;
 		}
@@ -54,10 +54,9 @@ public class EnumExample {
 		String getName(){
 			return name().toLowerCase();
 		}
-		
+
 		String getFarbCode(){
 			return this.farbcode;
 		}
 	}
-	
 }

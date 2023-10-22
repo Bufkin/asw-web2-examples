@@ -6,9 +6,7 @@ import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamReader;
 
 public class StaxParserExample {
-
 	public static void main(String[] args) throws Exception {
-
 		InputStream is = SaxParserExample.class.getClassLoader() //
 				.getResourceAsStream("messages.xml");
 		XMLStreamReader reader = XMLInputFactory.newFactory() //
