@@ -7,9 +7,9 @@ import javax.xml.stream.XMLStreamReader;
 
 public class StaxParserExample {
 	public static void main(String[] args) throws Exception {
-		InputStream is = SaxParserExample.class.getClassLoader() //
+		InputStream is = SaxParserExample.class.getClassLoader()
 				.getResourceAsStream("messages.xml");
-		XMLStreamReader reader = XMLInputFactory.newFactory() //
+		XMLStreamReader reader = XMLInputFactory.newFactory()
 				.createXMLStreamReader(is);
 
 		while (reader.hasNext()) {

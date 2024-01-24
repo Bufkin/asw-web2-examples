@@ -25,7 +25,6 @@ import java.util.regex.Pattern;
 public class CatifyHttpProxyServerExample {
 
 	public static void main(String[] args) throws Exception {
-
 		CatifyProxyServer server = new CatifyProxyServer();
 		server.setPort(9999);
 		server.setThreads(64);
@@ -33,7 +32,6 @@ public class CatifyHttpProxyServerExample {
 	}
 
 	static class CatifyProxyServer {
-
 		private static final Pattern HTTP_METHODS_PATTERN = Pattern.compile("(GET|PUT|POST|DELETE|PATCH|HEAD).*");
 		private static final Pattern IMAGE_REQUEST_LINE_PATTERN = Pattern.compile("^GET .*\\.(png|jpg|gif) HTTP/1.1$");
 		private static final Pattern HOST_REQUEST_HEADER_PATTERN = Pattern.compile("Host: .*");
@@ -44,7 +42,6 @@ public class CatifyHttpProxyServerExample {
 		private int threads;
 
 		void start() {
-
 			ExecutorService es = Executors.newFixedThreadPool(threads);
 
 			try (ServerSocket ss = new ServerSocket(port)) {
@@ -59,7 +56,6 @@ public class CatifyHttpProxyServerExample {
 		}
 
 		private void handleClientConnection(ExecutorService es, Socket clientSocket) {
-
 			es.submit(() -> {
 
 				try (Scanner scanner = new Scanner(clientSocket.getInputStream())) {
@@ -93,7 +89,6 @@ public class CatifyHttpProxyServerExample {
 		}
 
 		private String readRequestHeadersAndReturnHostHeader(Scanner scanner, StringBuilder remainingRequestFragment) {
-
 			String hostHeader = null;
 			while (scanner.hasNextLine()) {
 				String headerLine = scanner.nextLine();
@@ -129,17 +124,16 @@ public class CatifyHttpProxyServerExample {
 			try (Socket socket = new Socket(hostname, 80)) {
 
 				// Send HTTP Request
-				new PrintStream(socket.getOutputStream()) //
-						.printf("%s%n", requestLine) // HTTP Request Line
-						.printf("%s%n", hostHeaderValue) // HTTP Host Header
-						.printf("%s%n", requestFragment) //
-						.println(); // empty line
+				new PrintStream(socket.getOutputStream())
+						.printf("%s%n", requestLine)
+						.printf("%s%n", hostHeaderValue)
+						.printf("%s%n", requestFragment)
+						.println();
 
 				pipeInputStreamToOutputStream(socket.getInputStream(), proxiedOutputStream);
 			} catch (IOException ignore) {
 				// ex.printStackTrace();
 			}
-
 		}
 
 		private void pipeInputStreamToOutputStream(InputStream inputStream, OutputStream proxiedOutputStream)

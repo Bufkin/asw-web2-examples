@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class ZahlenRaten {
 
 	public static void main(String[] args) throws Exception {
-
 		Random random = new Random();
 
 		int max = 100;

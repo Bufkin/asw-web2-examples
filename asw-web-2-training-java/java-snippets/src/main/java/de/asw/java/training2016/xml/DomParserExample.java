@@ -12,11 +12,11 @@ import org.w3c.dom.NodeList;
 public class DomParserExample {
 	public static void main(String[] args) throws Exception {
 
-		InputStream is = SaxParserExample.class.getClassLoader() //
+		InputStream is = SaxParserExample.class.getClassLoader()
 				.getResourceAsStream("message.xml");
 
-		DocumentBuilder parser = DocumentBuilderFactory //
-				.newInstance() //
+		DocumentBuilder parser = DocumentBuilderFactory
+				.newInstance()
 				.newDocumentBuilder();
 
 		Document document = parser.parse(is);
@@ -24,8 +24,8 @@ public class DomParserExample {
 		NodeList nodeList = document.getElementsByTagName("message");
 		for (int i = 0, len = nodeList.getLength(); i < len; i++) {
 			Node node = nodeList.item(i);
-			System.out.printf("%s id=%s%n", //
-					node.getNodeName(), //
+			System.out.printf("%s id=%s%n",
+					node.getNodeName(),
 					node.getAttributes().getNamedItem("id").getNodeValue());
 		}
 	}

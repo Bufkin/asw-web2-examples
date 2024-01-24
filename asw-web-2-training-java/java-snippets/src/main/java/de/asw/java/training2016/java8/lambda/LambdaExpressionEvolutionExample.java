@@ -48,7 +48,6 @@ enum Color {
 }
 
 class Shape {
-
     Color color;
 
     public Shape(Color color) {

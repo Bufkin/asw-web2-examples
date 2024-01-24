@@ -4,7 +4,6 @@ import java.net.URI;
 
 public class UriExample {
 	public static void main(String[] args) {
-
 		URI uri = URI.create("https://user:password@www.example.com:8042/over/there?name=ferret#nose");
 		System.out.println(uri);
 		System.out.println("Scheme: " + uri.getScheme());

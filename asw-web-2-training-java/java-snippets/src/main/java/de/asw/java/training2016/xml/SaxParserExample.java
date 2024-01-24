@@ -12,7 +12,7 @@ import org.xml.sax.helpers.DefaultHandler;
 public class SaxParserExample {
 	public static void main(String[] args) throws Exception {
 
-		InputStream is = SaxParserExample.class.getClassLoader() //
+		InputStream is = SaxParserExample.class.getClassLoader()
 				.getResourceAsStream("messages.xml");
 		DefaultHandler dh = new DefaultHandler() {
 			@Override
@@ -21,10 +21,10 @@ public class SaxParserExample {
 				System.out.println("Start Element: " + qName);
 			}
 		};
-		SAXParser saxParser = SAXParserFactory //
-				.newInstance() //
+		SAXParser saxParser = SAXParserFactory
+				.newInstance()
 				.newSAXParser();
-		saxParser //
+		saxParser
 				.parse(is, dh);
 	}
 }

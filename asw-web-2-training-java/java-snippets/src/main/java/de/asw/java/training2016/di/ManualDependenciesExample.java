@@ -3,7 +3,6 @@ package de.asw.java.training2016.di;
 public class ManualDependenciesExample {
 
 	static class Komponente1{
-		//...
 		Komponente2 komponente2;
 
 		public Komponente2 getKomponente2() {
@@ -21,7 +20,7 @@ public class ManualDependenciesExample {
 	}
 
 	static class Komponente2{
-		//...
+
 	}
 
 	public static void main(String[] args) {

@@ -3,8 +3,6 @@ package de.asw.java.training2016.basics;
 public class EnumExample {
 
 	public static void main(String[] args) {
-
-//		example1();
 		example2();
 	}
 
@@ -19,7 +17,7 @@ public class EnumExample {
 			System.out.println("gelb");
 			break;
 		case GRÜN:
-			System.out.println("gr�n");
+			System.out.println("grün");
 			break;
 		}
 	}
